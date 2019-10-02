@@ -124,7 +124,9 @@ For Each Ws In Worksheets
      Next I
      
      Ws.Cells(2, 17).Value = max
+     Ws.Cells(2, 17).Style = "percent"
      Ws.Cells(3, 17).Value = Min
+     Ws.Cells(3, 17).Style = "percent"
      tmax = 0
      
     For I = 2 To TotalLastRow
@@ -139,6 +141,7 @@ For Each Ws In Worksheets
 Next Ws
 
 End Sub
+
 
 
 
